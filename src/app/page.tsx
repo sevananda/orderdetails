@@ -2,112 +2,163 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    // <div >
+    //       <div style={{ backgroundColor: 'white', color: '#000000', fontFamily: 'Arial, sans-serif', margin: 0, padding: '20px' }}>
+    //   <div style={{ maxWidth: '600px', margin: '0 auto', backgroundColor: '#ffff', padding: '20px', borderRadius: '10px' }}>
+    //     <h1 style={{ fontSize: '24px', marginBottom: '20px' }}>Account</h1>
+    //     <h2 style={{ fontSize: '20px', fontWeight: 'normal', marginBottom: '10px' }}>Order #66c851968ca5ea7f711216d9</h2>
+    //     <p style={{ fontSize: '14px', marginBottom: '30px' }}>Placed on August 23 at 2024 at 2:38 PM</p>
+
+    //     <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '10px' }}>
+    //       <h3 style={{ fontSize: '18px', color: '#000000', marginBottom: '20px' }}>Order History</h3>
+    //       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+    //         <thead>
+    //           <tr style={{ textAlign: 'left', color: '#000000' }}>
+    //             <th style={{ paddingBottom: '10px' }}>Product</th>
+    //             <th style={{ paddingBottom: '10px' }}>SKU</th>
+    //             <th style={{ paddingBottom: '10px' }}>Price</th>
+    //             <th style={{ paddingBottom: '10px' }}>Quantity</th>
+    //             <th style={{ paddingBottom: '10px' }}>Total</th>
+    //           </tr>
+    //         </thead>
+    //         <tbody>
+    //           <tr style={{ borderTop: '1px solid #333' }}>
+    //             <td style={{ padding: '10px 0' }}>SLAY Variety Pack (Combo)</td>
+    //             <td>MMGC-250</td>
+    //             <td>₹ 400</td>
+    //             <td>3</td>
+    //             <td>₹ 1200</td>
+    //           </tr>
+    //           <tr style={{ borderTop: '1px solid #333' }}>
+    //             <td style={{ padding: '10px 0' }}>SLAY Coffee Madras Mud 100% (Pack 1)</td>
+    //             <td>MMGC-250</td>
+    //             <td>₹ 750</td>
+    //             <td>1</td>
+    //             <td>₹ 750</td>
+    //           </tr>
+    //           <tr style={{ borderTop: '1px solid #333' }}>
+    //             <td style={{ padding: '10px 0' }}>SLAY Variety Pack (Combo)</td>
+    //             <td>MMGC-250</td>
+    //             <td>₹ 550</td>
+    //             <td>1</td>
+    //             <td>₹ 550</td>
+    //           </tr>
+    //         </tbody>
+    //       </table>
+
+    //       <p style={{ margin: '20px 0 10px 0' }}>Fulfilled August 23 at 2024 at 2:38 PM</p>
+    //       <h1><a href="#" style={{ color: '#000000', textDecoration: 'bold' }}>Track shipment</a></h1>
+    //       <p>Ekart Logistics #SHTP0000213425</p>
+
+    //       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px' }}>
+    //         <div >
+    //           <a href="#" style={{ color: '#000000', textDecoration: 'none' }}>Download Invoice</a>
+    //         </div>
+    //         </div>
+    //         <div style={{ textAlign: 'right', flex: 1 }}>
+    //           <p>Subtotal: ₹ 2500</p>
+    //           <p>Shipping (Prepaid Shipping Charges): ₹ 0</p>
+    //           <p>Tax (CGST 2.5%): ₹ 0</p>
+    //           <p>Tax (IGST 2.5%): ₹ 0</p>
+    //           <p style={{ fontWeight: 'bold', fontSize: '18px', marginTop: '10px' }}>Total: ₹ 2500</p>
+    //         </div>
+          
+    //     </div>
+    //   </div>
+    // </div>
+    // </div>
+
+
+    <div style={{ backgroundColor: '#121212', color: '#fff', fontFamily: 'Arial, sans-serif', margin: 0, padding: '20px' }}>
+    <div style={{ maxWidth: '600px', margin: '0 auto', backgroundColor: '#1f1f1f', padding: '20px', borderRadius: '10px' }}>
+      <h1 style={{ fontSize: '24px', marginBottom: '20px' }}>Account</h1>
+      <h2 style={{ fontSize: '20px', fontWeight: 'normal', marginBottom: '10px' }}>Order #66c851968ca5ea7f711216d9</h2>
+      <p style={{ fontSize: '14px', marginBottom: '30px' }}>Placed on August 23 at 2024 at 2:38 PM</p>
+
+      <div style={{ backgroundColor: '#1a1a1a', padding: '20px', borderRadius: '10px' }}>
+        <h3 style={{ fontSize: '18px', color: '#ff4d6d', marginBottom: '20px' }}>Order History</h3>
+        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr style={{ textAlign: 'left', color: '#dcdcdc' }}>
+              <th style={{ paddingBottom: '10px' }}>Product</th>
+              <th style={{ paddingBottom: '10px' }}>SKU</th>
+              <th style={{ paddingBottom: '10px', textAlign: 'right' }}>Price</th>
+              <th style={{ paddingBottom: '10px', textAlign: 'right' }}>Quantity</th>
+              <th style={{ paddingBottom: '10px', textAlign: 'right' }}>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style={{ borderTop: '1px solid #333' }}>
+              <td style={{ padding: '10px 0' }}>SLAY Variety Pack (Combo)</td>
+              <td>MMGC-250</td>
+              <td style={{ textAlign: 'right' }}>₹ 400</td>
+              <td style={{ textAlign: 'right' }}>3</td>
+              <td style={{ textAlign: 'right' }}>₹ 1200</td>
+            </tr>
+            <tr style={{ borderTop: '1px solid #333' }}>
+              <td style={{ padding: '10px 0' }}>SLAY Coffee Madras Mud 100% (Pack 1)</td>
+              <td>MMGC-250</td>
+              <td style={{ textAlign: 'right' }}>₹ 750</td>
+              <td style={{ textAlign: 'right' }}>1</td>
+              <td style={{ textAlign: 'right' }}>₹ 750</td>
+            </tr>
+            <tr style={{ borderTop: '1px solid #333' }}>
+              <td style={{ padding: '10px 0' }}>SLAY Variety Pack (Combo)</td>
+              <td>MMGC-250</td>
+              <td style={{ textAlign: 'right' }}>₹ 550</td>
+              <td style={{ textAlign: 'right' }}>1</td>
+              <td style={{ textAlign: 'right' }}>₹ 550</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style={{ margin: '20px 0 10px 0' }}>Fulfilled August 23 at 2024 at 2:38 PM</p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
+          <div>
+            <p>Track shipment</p>
+            <p>Ekart Logistics #SHTP0000213425</p>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <a href="#" style={{ color: '#ff4d6d', textDecoration: 'none' }}>Download Invoice</a>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px solid #333', paddingTop: '10px' }}>
+          <div style={{ flex: 1 }}>
+            <p>Subtotal:</p>
+            <p>Shipping (Prepaid Shipping Charges):</p>
+            <p>Tax (CGST 2.5%):</p>
+            <p>Tax (IGST 2.5%):</p>
+            <p style={{ fontWeight: 'bold', fontSize: '18px', marginTop: '10px' }}>Total:</p>
+          </div>
+          <div style={{ textAlign: 'right', flex: 1 }}>
+            <p>₹ 2500</p>
+            <p>₹ 0</p>
+            <p>₹ 0</p>
+            <p>₹ 0</p>
+            <p style={{ fontWeight: 'bold', fontSize: '18px', marginTop: '10px' }}>₹ 2500</p>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    {/* Media query for responsiveness */}
+    <style jsx>{`
+      @media (max-width: 600px) {
+        div[style*="display: 'flex'"] {
+          display: block !important;
+          text-align: left !important;
+        }
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        div[style*="text-align: 'right'"] {
+          text-align: left !important;
+        }
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        div[style*="justify-content: 'space-between'"] {
+          display: block !important;
+        }
+      }
+    `}</style>
+  </div>
   );
 }
